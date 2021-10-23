@@ -1,0 +1,46 @@
+ul {
+  list-style: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  outline: none;
+
+  // 清除浮动
+  ::after {
+    clear: both;
+    content: " ";
+    display: block;
+  }
+
+  li {
+    float:left;
+    width: 33.33%;
+    height: 33.33%;
+    overflow:hidden;
+
+    a {
+      display: block;
+      position: relative;
+      color: #FFF;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+     
+      .item-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       
+        .icon {
+        
+        }
+  
+        span {
+          color: #333;
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}

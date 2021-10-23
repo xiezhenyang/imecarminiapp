@@ -1,0 +1,9 @@
+.nav-box {
+  width: '100%';
+  background-color: darkcyan;
+}
+.nav-box .navbar p {
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+}
