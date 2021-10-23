@@ -1,6 +1,8 @@
-const { View } = require("@tarojs/components");
-const { useReady, useDidShow, useDidHide, usePullDownRefresh } = require("@tarojs/taro");
-const { useEffect } = require("react");
+import React, {useEffect} from 'react'
+import { useReady, useDidShow, useDidHide, usePullDownRefresh } from "@tarojs/taro"
+import './my.less'
+
+import NavBar from '../../components/navbar'
 
 function My(props) {
   useEffect(() => {
@@ -24,7 +26,9 @@ function My(props) {
   })
 
   return (
-    <View className='my' />
+    <div className="my">
+      <NavBar title="我的"/>
+    </div>
   )
 }
 
